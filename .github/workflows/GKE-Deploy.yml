@@ -3,7 +3,9 @@ name: Build and Deploy to GKE
 on:
   workflow_run:
     workflows: ["DevSecOps"]
-    branches: [development]
+    branches: 
+      - development
+      - master
     types: 
       - completed
  
